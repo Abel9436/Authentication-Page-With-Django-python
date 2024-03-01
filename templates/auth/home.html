@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Hompage</h1>
+{% if user.is_authenticated %}
+<h2>Hello {{fname}} Welcome to my Website</h2>
+<button type="submit"><a href="signout/">Logout</a></button>
+{% endif %}
+</body>
+</html>
